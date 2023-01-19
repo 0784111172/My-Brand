@@ -1,0 +1,198 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: aqua;
+    box-sizing: border-box;
+}
+
+.header {
+overflow: hidden;
+position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+
+.navigation{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0, 0.6rem;
+    height: 100%;
+    /* background-color: red; */
+}
+
+.navigation .logo{
+    background-color: yellow;
+    height: 3rem;
+    display:flex;
+    align-items: center;
+}
+.navigation .nav-list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: blue;
+    flex: 1;
+    min-height: 3rem;
+    margin-top: 0;
+    list-style: none;
+}
+.navigation .nav-list li>a{
+    color:#ffffff;
+text-decoration: none;
+}
+.navigation .nav-list li>a:hover{
+    background-color: rgba(211, 128, 13, 0.617);
+}
+
+.three-dots{
+    display: none;
+    max-height: 3rem;
+    background-color: forestgreen;
+    width: 0.6rem;
+}
+.three-dots li{
+margin-top:0.3rem;
+
+/* background-color: blueviolet; */
+height: 0.6rem;
+}
+
+.humberger .humb {
+    width: 1.6rem;
+    height: 5px;
+    background-color: black;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+ .change .humb1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .humb2 {
+    opacity: 0;
+}
+
+ .change .humb3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+@media screen and (max-width:400px){
+    .small-nav{
+        display: none;
+    }
+    .three-dots {
+            display: flex;
+        display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 0.5rem;
+        }
+
+              
+}
+
+
+/*Home Page styles*/
+.home{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content:center;
+    align-items: center;
+    color: #000000;
+}
+
+.home h1, .home h2{
+    margin: 0;
+}
+
+
+/*About page*/
+
+.about{
+    display: flex;
+    height: 100vh;
+    padding: 3rem;
+    background-color: green;
+}
+
+.about .mybio-image{
+    flex: 1;
+    /* background-color: #000000; */
+}
+.about img{
+    height: 30rem;
+    border-radius: 1.2rem;
+  
+}
+
+.about .mybio-text{
+    flex: 1;
+    margin-top: 0;
+    padding: 1.25rem;
+    padding-top: 0;
+    background-color: chocolate;
+    
+}
+
+.about .mybio-text p{
+    text-align: justify;
+    text-justify:inter-word;
+}
+.about .mybio-text .download{
+    border-radius: 10%;
+    height: 2rem;
+    background-color: rgb(242, 238, 246);
+    text-transform: uppercase;
+    border: 0;
+    cursor: pointer;
+    margin-top: 3rem;
+}
+
+/*Skills styles*/
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+text-transform: uppercase;
+}
+.skills li{
+    list-style: none;
+}
+
+/*Project styles*/
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+}
+.projects-title {
+    background-color: chartreuse;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.projects-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: brown;
+    height: 50vh;
+    width: 100%;
+}
+.projects-content .online-cv,  .my-brand{
+    height: 15rem;
+    width: 15rem;
+    border: 3px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
