@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/test.css" />
+    <title>Test Page</title>
+  </head>
+  <body>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#blogs">Blogs</a>
+      <a href="#contacts">Contacts</a>
+    </nav>
+
+    <section id="about">
+      <h1>About Us</h1>
+      <p>Content about the company or organization</p>
+    </section>
+
+    <section id="skills">
+      <h1>Skills</h1>
+      <p>
+        Content about the skills and expertise of the company or organization
+      </p>
+    </section>
+    <section id="projects">
+      <h1>Projects</h1>
+      <p>
+        Content about the skills and expertise of the company or organization
+      </p>
+    </section>
+    <section id="blogs">
+      <h1>Blogs</h1>
+      <p>
+        Content about the skills and expertise of the company or organization
+      </p>
+    </section>
+    <section id="contacts">
+      <h1>Contacts</h1>
+      <p>
+        Content about the skills and expertise of the company or organization
+      </p>
+    </section>
+    <script>
+      window.onscroll = function () {
+        var body = document.body;
+        if (window.scrollY > 10) {
+          body.classList.add("scrolled");
+        } else {
+          body.classList.remove("scrolled");
+        }
+      };
+    </script>
+  </body>
+</html>
