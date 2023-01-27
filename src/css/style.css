@@ -1,18 +1,16 @@
 body {
     margin: 0;
     padding: 0;
-    /* background-color: aqua; */
+    background-color: aqua;
     box-sizing: border-box;
 }
 
 .header {
-    height: 9vh;
     overflow: hidden;
     position: fixed;
     top: 0;
     width: 100%;
     background-color: #ffffff;
-    border-bottom: 2px #000 solid;
 }
 
 
@@ -25,23 +23,17 @@ body {
 }
 
 .navigation .logo {
-    /* background-color: yellow; */
-    height: 2rem;
+    background-color: yellow;
+    height: 3rem;
     display: flex;
     align-items: center;
-}
-
-.navigation .logo img {
-    height: 2.6rem;
-    width: auto;
-    margin-top: 2.5vh;
 }
 
 .navigation .nav-list {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* background-color: blue; */
+    background-color: blue;
     flex: 1;
     min-height: 3rem;
     margin-top: 0;
@@ -49,7 +41,7 @@ body {
 }
 
 .navigation .nav-list li>a {
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -77,8 +69,6 @@ body {
     background-color: black;
     margin: 3px 0;
     transition: 0.4s;
-    display: none;
-
 }
 
 .change .humb1 {
@@ -100,6 +90,7 @@ body {
 
     .three-dots {
         display: flex;
+        display: flex;
         flex-direction: column;
         justify-content: center;
         margin-left: 0.5rem;
@@ -117,12 +108,6 @@ body {
     justify-content: center;
     align-items: center;
     color: #000000;
-    background-color: rgba(0, 0, 0, 0.41);
-    border-bottom: 1px solid #000;
-    background-image: url('../images/hom2.jpg');
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-
 }
 
 .home h1,
@@ -135,10 +120,9 @@ body {
 
 .about {
     display: flex;
-    height: 50vh;
+    height: 100vh;
     padding: 3rem;
-    /* background-color: green; */
-    border-bottom: 1px solid #000;
+    background-color: green;
 }
 
 .about .mybio-image {
@@ -147,7 +131,7 @@ body {
 }
 
 .about img {
-    height: 20rem;
+    height: 30rem;
     border-radius: 1.2rem;
 
 }
@@ -157,7 +141,7 @@ body {
     margin-top: 0;
     padding: 1.25rem;
     padding-top: 0;
-    /* background-color: chocolate; */
+    background-color: chocolate;
 
 }
 
@@ -169,7 +153,7 @@ body {
 .about .mybio-text .download {
     border-radius: 10%;
     height: 2rem;
-    background-color: #D9D9D9;
+    background-color: rgb(242, 238, 246);
     text-transform: uppercase;
     border: 0;
     cursor: pointer;
@@ -179,13 +163,11 @@ body {
 /*Skills styles*/
 
 .skills {
-    background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 50vh;
     text-transform: uppercase;
-    border-bottom: 1px solid #000;
 }
 
 .skills li {
@@ -199,11 +181,10 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #ffffff;
-    border-bottom: 1px solid #000;
 }
 
 .projects-title {
-    /* background-color: chartreuse; */
+    background-color: chartreuse;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -213,132 +194,17 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* background-color: brown; */
+    background-color: brown;
     height: 50vh;
     width: 100%;
-
 }
 
 .projects-content .online-cv,
 .my-brand {
     height: 15rem;
     width: 15rem;
-    /* border: 3px solid rgb(33, 32, 32); */
+    border: 3px solid white;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 20%;
-}
-
-.projects-content .online-cv {
-    background-image: url('../images/My\ passport\ picture.jpg');
-    background-repeat: no-repeat;
-    background-size: 15rem auto;
-
-}
-
-.projects-content .my-brand {
-    background-image: url('../images/Nelly\ KAWERA.jpg');
-    background-repeat: no-repeat;
-    background-size: 15rem auto;
-
-}
-
-.projects-content .online-cv>a,
-.my-brand>a {
-    color: #FFFFFF;
-    font-size: large;
-    font-weight: 700;
-}
-
-
-/*Styles for blogs */
-
-.blogs {
-    display: flex;
-    flex-direction: column;
-    border-bottom: 1px solid #000;
-    height: 50vh;
-}
-
-.blogs .blogs-title {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.blogs .blogs-content {
-    display: flex;
-    background-color: #FFFFFF;
-}
-
-.blogs .blogs-content div {
-    flex: 1;
-    background-color: rgba(0, 0, 0, 0.41);
-    ;
-    column-gap: 10px;
-    margin: 10px;
-    padding: 10px;
-}
-
-/*Stles for contacts*/
-
-.contact {
-    display: flex;
-    flex-direction: column;
-    border-bottom: 1px solid #000;
-    height: 80vh;
-}
-
-.contact .contact-title {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.contact .contact-content {
-    display: flex;
-    height: 50%;
-    /* background-color: red; */
-}
-
-.contact .contact-content .email-phone {
-    flex: 1;
-    margin: 10px;
-    padding: 10px;
-    width: 100%;
-    background-color: rebeccapurple;
-}
-
-.contact .contact-content .contact-form {
-    margin: 10px;
-    padding: 8px 10px 10px 10px;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    background-color: brown;
-    width: 100%;
-}
-
-.contact .contact-content .contact-form div {
-    display: flex;
-    justify-content: center;
-    /* background-color: red; */
-    align-items: center;
-    height: 2.5rem;
-    width: 100%;
-}
-
-.form_contents {
-    display: flex;
-    background-color: yellow;
-    flex-direction: column;
-    min-height: 100%;
-}
-
-.form_contents>div {
-
-    height: 2rem;
-    background-color: green;
-    margin: 3px;
 }
