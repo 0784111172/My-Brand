@@ -106,12 +106,13 @@ body {
     height: 100vh;
     justify-content: center;
     align-items: center;
-    color: #000000;
+    color: white;
     background-color: rgba(0, 0, 0, 0.41);
     border-bottom: 1px solid #000;
-    background-image: url('../images/hom2.jpg');
+    background-image: url('../images/NellyPhoto1.jpg');
     background-repeat: no-repeat;
     background-size: 100% auto;
+
 
 }
 
@@ -132,7 +133,7 @@ span {
         justify-content: center;
         align-items: center;
         /* background-color: #7EC280;  */
-        background-size: auto 100%;
+        background-size: auto ;
     }
         .home h1,
         .home h2 {
@@ -166,6 +167,9 @@ span {
 
 .about .mybio-image {
     flex: 1;
+}
+.mybio-text>h2{
+    text-transform: uppercase;
 }
 
 .about img {
@@ -231,21 +235,56 @@ span {
             margin-top: 0.5rem;
         }
 }
-/*Skills styles*/
-
-.skills {
+/*PracticalSkills styles*/
+.PracticalSkills h2{
+    /* text-align: center ; */
+    text-transform: capitalize;
+}
+.PracticalSkills .PracticalSkill_Title {
+    text-align: center;
+    text-transform: uppercase;
+}
+.PracticalSkills {
     background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    height: 50vh;
+    height: 100vh;
     padding-top: 3rem;
-    text-transform: uppercase;
     border-bottom: 1px solid #000;
+
+}
+.PracticalSkills .PracticalSkillsOne{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
 }
 
-.skills li {
-    list-style: none;
+.PracticalSkills_Content{
+
+flex: 1;
+/* background-color: blue; */
+margin-right: 1rem;
+padding: 2rem;
+
+}
+.PracticalSkills_Image{
+    flex: 0.5;
+    /* background-color: green; */
+    height: 11rem;
+    padding: 2rem;
+}
+
+.PracticalSkills_Image img {
+    width: 30rem;
+    height: 15rem;
+    border-radius: 5%;
+
+}
+
+.PracticalSkills .PracticalSkillsTwo {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.1rem;
 }
 
 
@@ -256,7 +295,7 @@ span {
     flex-direction: column;
     align-items: center;
     padding-top: 3rem;
-    height: 100vh;
+    height: 70vh;
     background-color: #ffffff;
     border-bottom: 1px solid #000;
 }
@@ -281,24 +320,24 @@ span {
 
 .projects-content .online-cv,
 .my-brand {
-    height: 15rem;
+    height: 20rem;
     width: 15rem;
     /* border: 3px solid rgb(33, 32, 32); */
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 20%;
+    border-radius: 15%;
 }
 
 .projects-content .online-cv {
-    background-image: url('../images/My\ passport\ picture.jpg');
+    background-image: url('../images/Project3.jpg');
     background-repeat: no-repeat;
-    background-size: 15rem auto;
+    background-size: 30rem auto;
 
 }
 
 .projects-content .my-brand {
-    background-image: url('../images/Nelly\ KAWERA.jpg');
+    background-image: url('../images/Project4.jpg');
     background-repeat: no-repeat;
     background-size: 15rem auto;
 
@@ -306,7 +345,7 @@ span {
 
 .projects-content .online-cv>a,
 .my-brand>a {
-    color: #FFFFFF;
+    color: black;
     font-size: large;
     font-weight:900;
 }
