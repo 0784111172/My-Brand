@@ -79,20 +79,20 @@ body {
 }
 
 @media screen and (max-width:281px) {
-    .navigation{
+    .navigation {
         display: none;
         flex-direction: column;
-        
+
     }
 
- .header{
+    .header {
         border: none;
- }
+    }
 
- .humberger .humb{
-    display:flex;
-    flex-direction: column;
- }
+    .humberger .humb {
+        display: flex;
+        flex-direction: column;
+    }
 
 
 }
@@ -127,33 +127,34 @@ span {
 }
 
 @media screen and (max-width:281px) {
-    .home{
-        display:flex;
+    .home {
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         /* background-color: #7EC280;  */
-        background-size: auto ;
+        background-size: auto;
     }
-        .home h1,
-        .home h2 {
-            padding: 1rem;
-            font-size: 1.5rem;
-            height: 0.5rem;
-        }
+
+    .home h1,
+    .home h2 {
+        padding: 1rem;
+        font-size: 1.5rem;
+        height: 0.5rem;
+    }
 }
 
 @media screen and (min-width:540px) {
-#about-image {
-       
+    #about-image {
+
         border-radius: 1.2rem;
         background-color: red;
         height: 30rem;
-    } 
+    }
 
-.contact .contact-content .email-phone {
-    margin-left: 8rem;
-}
+    .contact .contact-content .email-phone {
+        margin-left: 8rem;
+    }
 }
 
 /*About page*/
@@ -168,7 +169,8 @@ span {
 .about .mybio-image {
     flex: 1;
 }
-.mybio-text>h2{
+
+.mybio-text>h2 {
     text-transform: uppercase;
 }
 
@@ -207,43 +209,50 @@ span {
 
 
 @media screen and (max-width:281px) {
-    .about{
+    .about {
         display: flex;
         flex-direction: column;
         height: 100vh;
         text-align: justify;
     }
-    .mybio-text h2{
+
+    .mybio-text h2 {
         text-align: center;
     }
+
     .about img {
         /* margin-left: 1rem;
         margin-top:1.5rem;
         height: 15rem; */
         border-radius: 1.2rem;
         margin-left: auto;
-            margin-right: auto;
-            width: 100%;
-        }
-   .resume{
+        margin-right: auto;
+        width: 100%;
+    }
+
+    .resume {
         width: 100%;
         display: flex;
         justify-content: center;
-        margin-top: 0;  
-   }
-        .about .mybio-text .download {
-            margin-top: 0.5rem;
-        }
+        margin-top: 0;
+    }
+
+    .about .mybio-text .download {
+        margin-top: 0.5rem;
+    }
 }
+
 /*PracticalSkills styles*/
-.PracticalSkills h2{
+.PracticalSkills h2 {
     /* text-align: center ; */
     text-transform: capitalize;
 }
+
 .PracticalSkills .PracticalSkill_Title {
     text-align: center;
     text-transform: uppercase;
 }
+
 .PracticalSkills {
     background-color: #FFFFFF;
     display: flex;
@@ -253,21 +262,23 @@ span {
     border-bottom: 1px solid #000;
 
 }
-.PracticalSkills .PracticalSkillsOne{
+
+.PracticalSkills .PracticalSkillsOne {
     display: flex;
     flex-direction: row;
     margin-bottom: 1rem;
 }
 
-.PracticalSkills_Content{
+.PracticalSkills_Content {
 
-flex: 1;
-/* background-color: blue; */
-margin-right: 1rem;
-padding: 2rem;
+    flex: 1;
+    /* background-color: blue; */
+    margin-right: 1rem;
+    padding: 2rem;
 
 }
-.PracticalSkills_Image{
+
+.PracticalSkills_Image {
     flex: 0.5;
     /* background-color: green; */
     height: 11rem;
@@ -287,6 +298,35 @@ padding: 2rem;
     margin-bottom: 0.1rem;
 }
 
+@media screen and (max-width:281px) {
+    .PracticalSkills_Image img {
+        height: 10rem;
+        width: 250px;
+
+    }
+
+    .PracticalSkills {
+        background-color: green;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .PracticalSkillsOne {
+        display: flex;
+        flex-direction: column;
+        background-color: red;
+        justify-content: space-around;
+    }
+
+    .PracticalSkillsTwo {
+        display: flex;
+        flex-direction: column;
+        background-color: yellow;
+        justify-content: space-around;
+    }
+}
 
 
 /*Project styles*/
@@ -347,12 +387,12 @@ padding: 2rem;
 .my-brand>a {
     color: black;
     font-size: large;
-    font-weight:900;
+    font-weight: 900;
 }
 
 
 @media screen and (max-width:281px) {
-.projects-content {
+    .projects-content {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -395,14 +435,15 @@ padding: 2rem;
 }
 
 @media screen and (max-width:281px) {
-    .blogs{
+    .blogs {
         height: 100vh;
     }
+
     .blogs .blogs-content {
         display: flex;
         flex-direction: column;
-       
-        }
+
+    }
 }
 
 /*Stles for contacts*/
@@ -412,7 +453,7 @@ padding: 2rem;
     flex-direction: column;
     height: 100vh;
     padding-top: 3rem;
-    
+
 }
 
 .contact .contact-title {
@@ -420,7 +461,7 @@ padding: 2rem;
     display: flex;
     justify-content: center;
     text-transform: uppercase;
-    
+
 }
 
 .contact .contact-content {
@@ -444,10 +485,10 @@ padding: 2rem;
 
 @media screen and (max-width:281px) {
     .contact .contact-content {
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-        }
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
 
     .form_contents>div {
         padding: 0;
@@ -455,21 +496,22 @@ padding: 2rem;
         display: flex;
         flex-direction: column;
         max-width: 15rem;
-        margin: 0.7rem ;
+        margin: 0.7rem;
         /* background-color: yellow; */
     }
-     textarea{
-            /* background-color: #7EC280; */
-            border: #282323 1px solid;
-        }
 
-    input{
+    textarea {
+        /* background-color: #7EC280; */
+        border: #282323 1px solid;
+    }
+
+    input {
         border: #282323 1px solid;
     }
 }
 
 /*Styling of the form*/
-form{
+form {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -477,24 +519,25 @@ form{
     padding: 2rem;
 }
 
-label{
+label {
     display: inline-block;
-    max-width:5rem;
+    max-width: 5rem;
     /* background-color: yellow; */
     margin: 0.3rem 0;
 }
 
-input{
+input {
     height: 0.8rem;
     padding: 0.5rem;
     outline: none;
 }
 
-h3{
+h3 {
     margin: 0;
     padding: 0;
 }
-textarea{
+
+textarea {
     display: inline-block;
     min-height: 10rem;
     padding: 0.5rem;
@@ -508,21 +551,17 @@ textarea{
     margin: 0.7rem 0;
 }
 
-.send-button{
-width: 50%;
+.send-button {
+    width: 50%;
     display: flex;
     justify-content: center;
     /* background-color: chocolate; */
     align-items: center;
 }
 
-.send{
+.send {
     height: 2rem;
     border-radius: 1rem;
     width: 9rem;
     background-color: #7EC280;
 }
-
-
-
-
