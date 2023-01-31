@@ -1,0 +1,46 @@
+/*Home Page styles*/
+.home {
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.41);
+    border-bottom: 1px solid #000;
+    background-image: url('../images/NellyPhoto1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+
+
+}
+
+.home h1,
+.home h2 {
+    margin: 0;
+}
+
+span {
+    font-weight: 900;
+    margin-right: 0.4rem;
+}
+
+@media screen and (max-width:281px) {
+    .home {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* background-color: #7EC280;  */
+        background-size: auto;
+        background-position: center;
+    }
+
+    .home h1,
+    .home h2 {
+        padding: 1rem;
+        font-size: 1.5rem;
+        height: 0.5rem;
+    }
+}
