@@ -11,8 +11,7 @@ body {
     /* background-color: aqua; */
     box-sizing: border-box;
 }
-
-.header {
+.header{ 
     height: 9vh;
     overflow: hidden;
     position: fixed;

@@ -1,19 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyBrand|login</title>
-    <link rel="stylesheet" href="./../css/login.css">
-</head>
-<body>
-    login page
-    <div>
-        <a href="./../../index.html">Go back to home page</a>
-    </div>
-    <!-- <a href="./dashboard.html">Signin</a> -->
-    <button class="signin">Signin</button>
-<script src="./../script/signin.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Login and Sign Up page</title>
+
+    <link rel="stylesheet" href="/src/css/login.css" />
+  </head>
+  <body>
+    <section class="container forms">
+      <div class="form login">
+        <div class="form-content">
+          <div>
+            <a href="./../../index.html">Go back to Home</a>
+          </div>
+          <header>Login</header>
+
+          <form action="#"></form>
+          <div class="field input">
+            <input type="email" placeholder="Enter your Email" class="input" />
+          </div>
+
+          <div class="field input">
+            <input
+              type="password"
+              placeholder="Enter your Password"
+              class="password"
+            />
+          </div>
+
+          <div class="form-link">
+            <a href="#" class="forgot-pass">Forgot password?</a>
+          </div>
+
+          <div class="field button-field">
+            <button class="signin">Login</button>
+          </div>
+
+          <div class="form-link">
+            <span
+              >Already have account?
+              <a href="#" class="Signup-link">Signup</a></span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./../script/signin.js"></script>
+  </body>
 </html>
