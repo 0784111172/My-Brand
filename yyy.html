@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./src/css/style.css" />
+  <title>My Brand</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navigation">
+      <div class="logo">
+        <a href="#"><img src="./src/images/Logo.PNG" alt="NK for Logo" /></a>
+      </div>
+      <ul class="nav-list ">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#practicalSkills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#blogs">Blogs</a></li>
+        <li><a href="#contact">Contacts</a></li>
+        <li><a href="./src/pages/login.html">Login</a></li>
+      </ul>
+      <div class="humberger">
+        <div class="humb humb1"></div>
+        <div class="humb humb2"></div>
+        <div class="humb humb3"></div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="home" id="home">
+      <h2>I am Nelly KAWERA</p>
+        <h1>Jr Software Developer</p>
+    </div>
+    <div class="about" id="about">
+      <div class="mybio-image">
+        <img id="about-image" src="./src/images/NellyKAWERA2.jpg" alt="Bio Image on the left is required" />
+      </div>
+      <div class="mybio-text">
+        <h2>My BIO</h2>
+        <p>
+          I am a technology enthusiast with communication and leadership
+          skills, self driven, result-oriented and believing in team work.
+          I
+          am looking for social changes and economic development in Africa
+          through engineering methods in telecommunication and Software
+          Development.
+        </p>
+        <div class="resume">
+          <button class="download">download resume</button>
+        </div>
+      </div>
+    </div>
+    <div class="practicalSkills" id="practicalSkills">
+      <!-- <h2 class="practicalSkill_Title">practical Skills</h2> -->
+      
+      <div class="practicalSkillsOne">
+        <div class="practicalSkills_Image">
+          <!-- <img src="./src/images/Skills2.jpg" alt=""> -->
+        </div>
+        <div class="practicalSkills_Content">
+          <!-- <h2>Software Development Skills</h2>
+          <P>
+            PostgreSQL • Mongo DB • Express JS • Node JS • HTML • CSS • Vanilla JS • REACT/REDUX • CI & CD • TDD •
+            BOOTSTRAP • MATERIAL UI • FIREBASE • SOCKETS.IO • Agile/Scrum methodology • Performance and scalability •
+            Optimization •
+            API design• Responsive design • Debugging • Server-side scripting • OOP
+          </P> -->
+        </div>
+      </div>
+      <div class="practicalSkillsTwo">
+        <div class="practicalSkills_Image">
+          <!-- <img src="./src/images/Skills1.jpg" alt=""> -->
+        </div>
+        <div class="practicalSkills_Content">
+          <!-- <h2>Telecommunication Engineers</h2>
+          <p>
+            Transmission(Tx) systems • Radio Access Network(RAN) systemsn • Powers systems• (RAN, Tx)Configuration• Scrypting • Link
+            Alignment• Projectsmanagement & Team Leading.
+          </p> -->
+        </div>
+
+      </div>
+    </div>
+    <div class="projects" id="projects">
+      <div class="projects-title">
+        <h2>Projects</h2>
+      </div>
+      <div class="projects-content">
+        <div class="online-cv">
+          <a href="https://github.com/nellykawera/Nelly-CV" target="_blank">
+            Online CV
+          </a>
+        </div>
+        <div class="my-brand">
+          <a href="http://https://www.figma.com/file/HDdP4g9byY4E4YomPwGt0t/My-Brand?node-id=1%3A2&t=0bXLp0ry4YEv3EQY-0"
+            target="_blank">
+            My Brand
+          </a>
+        </div>
+      </div>
+
+    </div>
+    <div class="blogs" id="blogs">
+      <div class="blogs-title">
+        <h2>Blogs</h2>
+      </div>
+      <div class="blogs-content">
+        <div>
+          <h2>Keep walking</h2>
+          <p>The secret of making progress is to get started.</p>
+        </div>
+        <div>
+          <h2>Law of attraction</h2>
+          <p>
+            Imagination is everything, it is the preview of the life’s coming
+            attraction_Albert Einsten
+          </p>
+        </div>
+        <div>
+          <h2>Life choices</h2>
+          <p>
+            You are free to choose but you are not free of the consequences
+            resulting from your choices, choose wisely!
+          </p>
+        </div>
+      </div>
+
+    </div>
+    <div class="contact" id="contact">
+      <div class="contact-title">
+        <h2>Contacts</h2>
+      </div>
+      <div class="contact-content">
+        <div class="email-phone">
+          <p><span>Email:</span>nellykwera@gmail.com</p>
+          <p><span>Phone:</span>+250788000000</p>
+        </div>
+        <div class="contact-form">
+          <form action="">
+            <div class="form_contents">
+              <h3>Reach out to Me</h3>
+              <div>
+                <label for="name">Names</label>
+                <input type="text" placeholder="Enter your name here" />
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input type="email" placeholder="Enter your email address here" />
+              </div>
+              <div>
+                <label for="message">Message</label>
+                <textarea placeholder="Enter your message here"></textarea>
+              </div>
+              <div class="send-button">
+                <button class="send">Send</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <script>
+    let menu = document.querySelector(".humberger");
+    menu.addEventListener("click", myFunction);
+    function myFunction(e) {
+      e.preventDefault();
+      menu.classList.toggle("change");
+      // console.log("clicked");
+    }
+  </script>
+</body>
+
+</html>

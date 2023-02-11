@@ -5,7 +5,12 @@
 @import url("./projects.css");
 @import "./contacts.css";
 
-
+body {
+    margin: 0;
+    padding: 0;
+    /* background-color: aqua; */
+    box-sizing: border-box;
+}
 .header{ 
     height: 9vh;
     overflow: hidden;
