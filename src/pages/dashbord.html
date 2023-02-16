@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Blog Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="./../css/dashbord.css">
+</head>
+
+<body>
+    <header>
+        <h1>Blog Dashboard</h1>
+    </header>
+    <nav>
+        <!-- <ul>
+            <li><a href="#">Create Blog</a></li>
+            <li><a href="#">Update Blog</a></li>
+            <li><a href="#">Read Blog</a></li>
+            <li><a href="#">Delete Blog</a></li>
+        </ul> -->
+    </nav>
+    <main>
+        <section>
+            <h2>Create Blog</h2>
+            <form>
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title"><br><br>
+                <label for="content">Content:</label>
+                <textarea id="content" name="content"></textarea><br><br>
+                <input type="submit" value="Create">
+            </form>
+        </section>
+        <section>
+            <h2>Update Blog</h2>
+            <form>
+                <label for="blog-id">Blog ID:</label>
+                <input type="text" id="blog-id" name="blog-id"><br><br>
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title"><br><br>
+                <label for="content">Content:</label>
+                <textarea id="content" name="content"></textarea><br><br>
+                <input type="submit" value="Update">
+            </form>
+        </section>
+        <section>
+            <h2>Read Blog</h2>
+            <ul>
+                <li>001: <a href="#">How to start a business</a></li>
+                <li>002: <a href="#">My thoughs about building career in Software Dev</a></li>
+                <li>003: <a href="#">Blog Title</a></li>
+                <li>107: <a href="#">Blog Title</a></li>
+                <li>607: <a href="#">Blog Title</a></li>
+            </ul>
+        </section>
+        <section>
+            <h2>Delete Blog</h2>
+            <form>
+                <label for="blog-id">Blog ID:</label>
+                <input type="text" id="blog-id" name="blog-id"><br><br>
+                <input type="submit" value="Delete">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Nelly Kawera</p>
+    </footer>
+</body>
+
+</html>
