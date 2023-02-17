@@ -1,0 +1,14 @@
+#side-panel {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    z-index: 999;
+    transition: all 0.3s ease;
+}
+
+#side-panel.open {
+    right: 0;
+}
