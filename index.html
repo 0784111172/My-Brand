@@ -1,224 +1,195 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- CSS -->
-  <link rel="stylesheet" href="./src/css/style.css" />
-  <title>My Brand</title>
+    <title>My Personal Website</title>
+    <!-- Add CSS stylesheets and JavaScript files here -->
+    <link rel="stylesheet" href="style.css">
 </head>
-<!-- Boxicon css  -->
-<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 <body>
-
-  <header class="header">
-    <nav class="navigation">
-      <div class="logo">
-        <a href="#"><img src="./src/images/Logo.PNG" alt="NK for Logo" /></a>
-      </div>
-      <ul class="nav-list ">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#practicalSkills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#blogs">Blogs</a></li>
-        <li><a href="#contact">Contacts</a></li>
-        <!-- <li><a href="./src/pages/dashbord.html">Dashboard</a></li>
-        <li><a href="./src/pages/login-signup.html">Login/Signup</a></li> -->
-      </ul>
-
-
-      <button id="open-panel">User</button>
-      <div id="side-panel">
-        <div class="user-icon">
-          <div class="user-panel-icon">
-            <a href="#"><img src="./src/images/user-icon.png" alt="User" /></a>
-          </div>
-          <div class="user-panel-open">
-            <ul>
-              <li><a href="./src/pages/login-signup.html">Login/Signup</a></li> <br>
-              <li><a href="./src/pages/dashbord.html">Dashboard</a></li><br>
-              <li><a href="#">Settings</a></li><br>
-              <li><a href="#">Logout</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <!-- user panel -->
+    <!-- Navigation bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#blogs">Blogs</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+            <li><a href="#login">Login</a></li>
+            <li><a href="#signup">Signup</a></li>
+        </ul>
     </nav>
+    <!-- Home section -->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h4>Hello</h4>
+            <h1>I am Nelly</h1>
+            <h2>KAWERA</h2>
+            <h3>Fullstack Developer</h3>
+            <!-- <a href="#" class="btn">Hire Me</a> -->
+        </div>
+    </section>
 
-  </header>
-  <main>
-    <div class="home" id="home">
-      <h2>I am Nelly KAWERA</p>
-        <h1>Jr Software Developer</p>
-    </div>
-    <div class="about" id="about">
-      <div class="mybio-image">
-        <img id="about-image" src="./src/images/NellyKAWERA2.jpg" alt="Bio Image on the left is required" />
-      </div>
-      <div class="mybio-text">
-        <h2>My BIO</h2>
-        <p>
-          I am a technology enthusiast with communication and leadership
-          skills, self driven, result-oriented and believing in team work.
-          I
-          am looking for social changes and economic development in Africa
-          through engineering methods in telecommunication and Software
-          Development.
+    <!-- About Me section -->
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <img src="./src/images/Nellia-removebg-preview.png" alt="Profile Picture">
+        <p><br>Nelly K is a junior full-stack developer specializing in building responsive and user-friendly
+            websites
+            using HTML, CSS, and JavaScript. She started as a beginner and learned HTML and CSS to build her first
+            websites. <br>
+            As her skills grew, she delved into JavaScript, facing challenges along the way but persevering
+            through trial and error to hone her skills and gain confidence. She has become adept at creating responsive,
+            dynamic websites and is excited to continue learning and growing as a software developer.
+
         </p>
-        <div class="resume">
-          <button class="download">download resume</button>
-        </div>
-      </div>
-    </div>
-    <div class="practicalSkills" id="practicalSkills">
-      <h2 class="practicalSkill_Title">practical Skills</h2>
+        <a href="https://nellykawera.netlify.app" target="_blank" class="btn">Download Resume</a>
+    </section>
 
-      <div class="practicalSkillsOne" id="practicalSkillsOne">
-        <div class="practicalSkills_Image">
-          <img src="./src/images/Skills2.jpg" alt="">
-        </div>
-        <div class="practicalSkills_Content">
-          <h2>Software Development Skills</h2>
-          <P>
-            PostgreSQL • Mongo DB • Express JS • Node JS • HTML • CSS • Vanilla JS • REACT/REDUX • CI & CD • TDD •
-            BOOTSTRAP • MATERIAL UI • FIREBASE • SOCKETS.IO • Agile/Scrum methodology • Performance and scalability •
-            Optimization •
-            API design• Responsive design • Debugging • Server-side scripting • OOP
-          </P>
+    <!-- Skills section -->
+    <section id="skills">
+        <div class="skills-category">
+            <h2>Software Development Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>SQL</li>
+                <!-- add more skills as needed -->
+            </ul>
         </div>
 
-      </div>
-      <div class="practicalSkillsTwo" id="practicalSkillsTwo">
-        <div class="practicalSkills_Image">
-          <img src="./src/images/Skills1.jpg" alt="">
+        <div class="skills-category">
+            <h2>Telecom Engineering Skills</h2>
+            <ul>
+                <li>Network Design</li>
+                <li>Routing and Switching</li>
+                <li>Wireless Communication</li>
+                <li>Telecom Protocol Development</li>
+                <li>VoIP</li>
+                <!-- add more skills as needed -->
+            </ul>
         </div>
-        <div class="practicalSkills_Content">
-          <h2>Telecommunication Engineers</h2>
-          <p>
-            Transmission(Tx) systems • Radio Access Network(RAN) systemsn • Powers systems• (RAN, Tx)Configuration•
-            Scrypting • Link
-            Alignment• Projectsmanagement & Team Leading.
-        </div>
+    </section>
 
-      </div>
-    </div>
-    <div class="projects" id="projects">
-      <div class="projects-title">
-        <h2>Projects</h2>
-      </div>
-      <div class="projects-content">
-        <div class="online-cv" id="online-cv">
-          <a href="https://github.com/nellykawera/Nelly-CV" target="_blank">
-            Online CV
-          </a>
-        </div>
-        <div class="my-brand" id="my-brand">
-          <a href="http://https://www.figma.com/file/HDdP4g9byY4E4YomPwGt0t/My-Brand?node-id=1%3A2&t=0bXLp0ry4YEv3EQY-0"
-            target="_blank">
-            My Brand
-          </a>
-        </div>
-      </div>
 
-    </div>
-    <div class="blogs" id="blogs">
-      <div class="blogs-title">
+    <!-- Portfolio section -->
+    <!-- <section id="portfolio">
+        <h2>Portfolio</h2>
+        <ul>
+            <li>
+                <h3>Project 1</h3>
+                <img src="project1-image.png" alt="Project 1 image">
+                <p>Description of project 1.</p>
+                <a href="https://github.com/your-username/project-1">
+                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub icon" width="24"
+                        height="24">
+                    View on GitHub
+                </a>
+            </li>
+            <li>
+                <h3>Project 2</h3>
+                <img src="project2-image.png" alt="Project 2 image">
+                <p>Description of project 2.</p>
+                <a href="https://github.com/your-username/project-2">
+                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub icon" width="24"
+                        height="24">
+                    View on GitHub
+                </a>
+            </li>
+            <li>
+                <h3>Project 3</h3>
+                <img src="project3-image.png" alt="Project 3 image">
+                <p>Description of project 3.</p>
+                <a href="https://github.com/your-username/project-3">
+                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub icon" width="24"
+                        height="24">
+                    View on GitHub
+                </a>
+            </li>
+        </ul>
+    </section> -->
+
+    <section id="portfolio">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <ul>
+                <li>
+                    <h3>MyBrand</h3>
+                    <img src="./src/images/myBrand.png" alt="Project 1 Image">
+                    <p>A personal website to showcase my personal
+                        interests, experiences, skills, or achievements and blogposts.</p>
+                    <a href="https://github.com/nellykawera/MyBrand.github.io">
+                        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub icon" width="24"
+                            height="24">
+                        View on GitHub
+                    </a>
+                </li>
+                <li>
+                    <h3>Landing Page</h3>
+                    <img src="./src/images/landing-page.png" alt="Project 1 Image">
+                    <p>A standalone web page, created specifically for the purposes of a marketing or advertising
+                        campaign, designed with a single objective in mind. This is
+                        also known as a Call to Action or CTA.</p>
+                    <a href="https://github.com/your-username/project-3">
+                        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub icon" width="24"
+                            height="24">
+                        View on GitHub
+                    </a>
+                </li>
+                <li>
+                    <h3>Online CV</h3>
+                    <img src="./src/images/online-cv.png" alt="Project 1 Image">
+                    <p>A of personal website that is designed specifically to showcase a
+                        my professional background, skills, and achievements, in the format of a curriculum vitae
+                        or resume.</p>
+                    <a href="https://github.com/your-username/project-3">
+                        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub icon" width="24"
+                            height="24">
+                        View on GitHub
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Blogs section -->
+    <section id="blogs">
         <h2>Blogs</h2>
-      </div>
-      <div class="blogs-content">
-        <div>
-          <h2>Keep walking</h2>
-          <p>The secret of making progress is to get started.</p>
+        <!-- Add content for the blogs section here -->
+    </section>
+    <!-- Contact Me section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="https://formspree.io/f/moqzdobk" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="_replyto" required>
+                <label for="subject">Subject:</label>
+                <input type="subject" id="subject" name="subject" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <input type="submit" value="Send">
+            </form>
         </div>
-        <div>
-          <h2>Law of attraction</h2>
-          <p>
-            Imagination is everything, it is the preview of the life’s coming
-            attraction_Albert Einsten
-          </p>
-        </div>
-        <div>
-          <h2>Life choices</h2>
-          <p>
-            You are free to choose but you are not free of the consequences
-            resulting from your choices, choose wisely!
-          </p>
-        </div>
-      </div>
+    </section>
 
-    </div>
-    <div class="contact" id="contact">
-      <div class="contact-title">
-        <h2>Contacts</h2>
-      </div>
-      <div class="contact-content">
-        <div class="email-phone">
-          <p><span>Email:</span>nellykwera@gmail.com</p>
-          <p><span>Phone:</span>+250788000000</p>
-        </div>
-        <div class="contact-form">
-          <form action="">
-            <div class="form_contents">
-              <h3>Reach out to Me</h3>
-              <div>
-                <label for="name">Names</label>
-                <input type="text" placeholder="Enter your name here" />
-              </div>
-              <div>
-                <label for="email">Email</label>
-                <input type="email" placeholder="Enter your email address here" />
-              </div>
-              <div>
-                <label for="message">Message</label>
-                <textarea placeholder="Enter your message here"></textarea>
-              </div>
-              <div class="send-button">
-                <button class="send">Send</button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-
-    </div>
-  </main>
-
-  <script>
-    // Side panel
-    var openPanelButton = document.getElementById('open-panel');
-    var sidePanel = document.getElementById('side-panel');
-
-    openPanelButton.addEventListener('click', function () {
-      sidePanel.classList.toggle('open');
-    });
-
-
-    // // const sidePanel = document.getElementById('side-panel');
-
-    // // add a click event listener to the document object
-    // document.addEventListener('click', function (event) {
-    //   // if the clicked element is not inside the side panel, hide the side panel
-    //   if (!sidePanel.contains(event.target)) {
-    //     // sidePanel.style.display = 'none';
-    //     sidePanel.classList.toggle('open');
-    //   }
-    // });
-
-
-    // Side panel
-    let menu = document.querySelector(".humberger");
-    menu.addEventListener("click", myFunction);
-    function myFunction(e) {
-      e.preventDefault();
-      menu.classList.toggle("change");
-      // console.log("clicked");
-    }
-  </script>
+    <!-- Login section -->
+    <section id="login">
+        <h2>Login</h2>
+        <!-- Add content for the login section here -->
+    </section>
+    <!-- Signup section -->
+    <section id="signup">
+        <h2>Signup</h2>
+        <!-- Add content for the signup section here -->
+    </section>
+    <!-- Add JavaScript code to create smooth scrolling effect -->
 </body>
 
 </html>
