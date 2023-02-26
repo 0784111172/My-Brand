@@ -350,6 +350,7 @@
         document.getElementById("login-btn").addEventListener("click", function () {
             const username = document.getElementById("username").value;
             const password = document.getElementById("password").value;
+            console.log(username);
 
             fetch("http://localhost:3000/users")
                 .then(response => response.json())
