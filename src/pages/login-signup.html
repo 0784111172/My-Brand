@@ -225,11 +225,11 @@
                 <header>Login</header>
                 <form action="#">
                     <div class="field input-field">
-                        <input type="email" placeholder="Email" class="input">
+                        <input id="email-id" type="email" placeholder="Email" class="input">
                     </div>
 
                     <div class="field input-field">
-                        <input type="password" placeholder="Password" class="password">
+                        <input id="password-id" type="password" placeholder="Password" class="password">
                         <i class='bx bx-hide eye-icon'></i>
                     </div>
 
@@ -339,7 +339,7 @@
                 })
 
             })
-        })
+        });
 
         // links.forEach(link => {
         //     link.addEventListener("click", e => {
@@ -348,18 +348,22 @@
         //     })
         // })
         document.getElementById("login-btn").addEventListener("click", function () {
-            const username = document.getElementById("username").value;
-            const password = document.getElementById("password").value;
+            const username = document.getElementById("email-id").value;
+            const password = document.getElementById("password-id").value;
             console.log(username);
+            console.log(password);
 
             fetch("http://localhost:3000/users")
                 .then(response => response.json())
                 .then(data => {
-                    const user = data.users.find(u => u.username === username && u.password === password);
+                    const user = true;//= data.users.find(u => u.username === username && u.password === password);
+                    console.log(data);
                     if (user) {
                         window.location.href = "dashboard.html";
+                        console.log("Correct pass-username")
                     } else {
                         alert("Invalid username or password");
+                        console.log("Wrong pass-username")
                     }
                 })
                 .catch(error => console.error(error));

@@ -43,11 +43,16 @@
     ],
     "users": [
         {
-            "id": 1,
-            "name": "Nelly KAWERA",
-            "email": "nellykawera@gmail.com",
-            "username": "nelly",
-            "passsword": "123Nelly"
+            "username": "kaweranelly@gmail.com",
+            "password": "123!"
+        },
+        {
+            "username": "juru@gmail.com",
+            "password": "123!"
+        },
+        {
+            "username": "admin@example.com",
+            "password": "password"
         }
     ]
 }
