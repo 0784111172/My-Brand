@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Blog Dashboard</title>
+    <!-- <link rel="stylesheet" type="text/css" href="./../css/dashbord.css"> -->
+    <style>
+        /* CSS code for the body and HTML elements */
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #555;
+            color: #fff;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        section {
+            flex-basis: 400px;
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin-top: 0;
+        }
+
+        a {
+            color: #333;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Add more general styling rules as needed */
+
+
+        /* h2 {
+	font-size: 1.5em;
+	margin */
+
+
+        /* CSS code for the Create, Update, Read, and Delete buttons */
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #3e8e41;
+        }
+
+        /* CSS code for the form fields */
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        textarea {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        /* CSS code for the header and footer */
+
+        header {
+            color: #fff;
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Go back batton */
+        #go-back-button {
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 14px;
+            border: none;
+            cursor: pointer;
+        }
+
+        #go-back-button span {
+            margin-right: 10px;
+        }
+
+        #go-back-button:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Blog Dashboard</h1>
+        <button id="go-back-button">Go Back</button>
+    </header>
+    <nav>
+        <!-- <ul>
+            <li><a href="#">Create Blog</a></li>
+            <li><a href="#">Update Blog</a></li>
+            <li><a href="#">Read Blog</a></li>
+            <li><a href="#">Delete Blog</a></li>
+        </ul> -->
+    </nav>
+    <main>
+        <section>
+            <h2>Create Blog</h2>
+            <form class="create-blog">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title"><br><br>
+                <label for="content">Content:</label>
+                <textarea id="body" name="body"></textarea><br><br>
+                <input type="submit" value="Create">
+            </form>
+        </section>
+        <section>
+            <h2>Update Blog</h2>
+            <form>
+                <label for="blog-id">Blog ID:</label>
+                <input type="text" id="blog-id" name="blog-id"><br><br>
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title"><br><br>
+                <label for="content">Content:</label>
+                <textarea id="content" name="content"></textarea><br><br>
+                <input type="submit" value="Update">
+            </form>
+        </section>
+        <section>
+            <h2>Read Blog</h2>
+
+            <section id="blogs">
+                <iframe src="./blogs.html" width="100%" height="100%" frameborder="0"></iframe>
+            </section>
+
+        </section>
+        <section>
+            <h2>Delete Blog</h2>
+            <form class="deleteBlog">
+                <label for="blog-id">Blog ID:</label>
+                <input type="text" id="blog-id" name="blog-id"><br><br>
+                <input type="submit" value="Delete">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Nelly Kawera</p>
+    </footer>
+    <!-- <script src="./../script/dashbord.js"></script>
+    <script src="./../js/create.js"></script>
+    <script src="./../js/delete.js"></script>
+    <script src="./../js/blogs.js"></script> -->
+    <script>
+        document.getElementById("go-back-button").addEventListener("click", function () {
+            window.history.back();
+        });
+
+        // const goBackButton = document.getElementById('go-back-button');
+        // goBackButton.addEventListener('click', () => {
+        //     // Code to create a blog goes here
+        //     console.log('Create blog button clicked');
+        // });
+
+        // Get the buttons
+        const createBlogButton = document.getElementById('create-blog-button');
+        const updateBlogButton = document.getElementById('update-blog-button');
+        const readBlogButton = document.getElementById('read-blog-button');
+        const deleteBlogButton = document.getElementById('delete-blog-button');
+
+        // Add click event listeners to the buttons
+        createBlogButton.addEventListener('click', () => {
+            // Code to create a blog goes here
+            console.log('Create blog button clicked');
+        });
+
+        updateBlogButton.addEventListener('click', () => {
+            // Code to update a blog goes here
+            console.log('Update blog button clicked');
+        });
+
+        readBlogButton.addEventListener('click', () => {
+            // Code to read a blog goes here
+            console.log('Read blog button clicked');
+        });
+
+        deleteBlogButton.addEventListener('click', () => {
+            // Code to delete a blog goes here
+            console.log('Delete blog button clicked');
+        });
+
+
+
+    </script>
+</body>
+
+</html>
