@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Blog</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        #blog-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .blog {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 30rem;
+            padding: 2rem;
+        }
+
+        .blog h2 {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+
+        .blog p {
+            margin: 1rem 0;
+        }
+
+        .blog a {
+            display: block;
+            text-align: right;
+        }
+
+        #load-more-btn {
+            background-color: #0077cc;
+            border: none;
+            border-radius: 0.5rem;
+            color: #fff;
+            cursor: pointer;
+            display: block;
+            font-size: 1rem;
+            margin: 2rem auto;
+            padding: 1rem 2rem;
+        }
+
+        #load-more-btn:hover {
+            background-color: #005faa;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>My Blog</h1>
+    <div id="blog-list"></div>
+
+    <button id="load-more-btn">Load More</button>
+
+    <script>
+        const blogList = document.getElementById('blog-list');
+        const loadMoreBtn = document.getElementById('load-more-btn');
+
+        let page = 1;
+
+        function displayBlogs(blogs) {
+            blogs.forEach((blog) => {
+                const blogDiv = document.createElement('div');
+                blogDiv.classList.add('blog');
+                const title = document.createElement('h2');
+                const content = document.createElement('p');
+                const readMoreLink = document.createElement('a');
+
+                title.textContent = blog.title;
+                content.textContent = `${blog.content.slice(0, 300)}...`;
+                readMoreLink.textContent = 'Read More';
+                readMoreLink.href = `blog.html?id=${blog.id}`;
+
+                blogDiv.appendChild(title);
+                blogDiv.appendChild(content);
+                blogDiv.appendChild(readMoreLink);
+                blogList.appendChild(blogDiv);
+            });
+        }
+
+        function fetchBlogs() {
+            fetch(`http://localhost:3000/blogs?_page=${page}&_limit=4`)
+                .then((response) => response.json())
+                .then((data) => {
+                    displayBlogs(data);
+                    if (data.length === 0) {
+                        loadMoreBtn.style.display = 'none';
+                    }
+                })
+                .catch((error) => console.error(error));
+        }
+
+        fetchBlogs();
+
+        loadMoreBtn.addEventListener('click', () => {
+            page++;
+            fetchBlogs();
+        });
+    </script>
+</body>
+
+</html>
