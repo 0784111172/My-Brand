@@ -26,16 +26,25 @@ body {
 }
 
 
-/* Navigation bar */
-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #333;
+
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
     padding: 20px;
-    z-index: 1;
-}
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-start; /* Change from center to flex-start */
+  }
+  
 
 nav ul {
     display: flex;
@@ -45,6 +54,7 @@ nav ul {
 
 nav ul li {
     margin-right: 20px;
+    align-content:;
 }
 
 nav ul li:last-child {
@@ -292,66 +302,94 @@ span {
     border: 1px solid var(--main-color);
 }
 
-/* About */
 
-.about {
+@media (max-width: 768px) {
+    /* Styles for screens smaller than 768px */
+    .about-container {
+      flex-direction: column;
+    }
+    
+    .about-container img {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+  }
+  
+/* About */
+#about {
+    /* background-color: #f6f6f6; */
+    padding: 50px 0;
+
+    background-image: url(./src/images/about.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    align-items:flex;
+  }
+  
+  .about-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
-    padding: 50px;
-}
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
 
-.about h2 {
-    font-size: 36px;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.about img {
-    width: 300px;
-    height: 500px;
-    object-fit: cover;
-    /* border-radius: 50%; */
-    margin-right: 50px;
+  #about img {
+    /* width: 100%; */
+    height: 100%;
     filter: grayscale(80%);
-
-}
-
-.about p {
-    font-size: 24px;
-    flex-basis: 50%;
+    /* object-fit: cover; */
+  }
+  
+  .about-text {
+    flex-grow: 1;
+    max-width: 900px;
+  }
+  
+  .about-text h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .about-text p {
+    line-height: 1.5;
     margin-bottom: 30px;
-    text-align: justify;
-}
-
-.about .btn {
+    text-align: left;
+    color: white;
+  }
+  
+  .about-text a {
     display: inline-block;
-    padding: 12px 30px;
-    margin-top: 20px;
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
     border-radius: 5px;
-    border: none;
     text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-    transition: background-color 0.3s ease;
-}
+    transition: background-color 0.2s;
+  }
+  
+  .about-text a:hover {
+    background-color: #666;
+  }
+  
 
-.about .btn:hover {
-    background-color: #000000;
-    color: #ffffff;
-}
+
 
 /* Skills */
 #skills {
+    background-image: url(./src/images/skls.png);
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: flex;
     flex-wrap: wrap;
     margin-top: 50px;
+    
 }
 
 .skills-category {
@@ -359,6 +397,7 @@ span {
     margin-right: 20px;
     margin-bottom: 20px;
     max-width: 400px;
+    
 }
 
 .skills-category:last-child {
@@ -368,12 +407,15 @@ span {
 .skills-category h2 {
     font-size: 24px;
     margin-bottom: 10px;
+    color: white;
+    
 }
 
 .skills-category ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    color: white;
 }
 
 .skills-category li {
@@ -385,17 +427,22 @@ span {
 /* portfolio */
 #portfolio {
     /* background-color: #f2f2f2; */
+    background-image: url(./src/images/Portfolio.jpg);
+    background-size: cover;
+    background-position: center;
     padding: 50px;
 }
 
 #portfolio h2 {
     margin-bottom: 20px;
+    color: white;
 }
 
 #portfolio p {
     font-size: 18px;
     margin-bottom: 30px;
     text-align: center;
+    color: white;
 }
 
 #portfolio ul {
@@ -416,12 +463,14 @@ span {
 #portfolio li h3 {
     font-size: 22px;
     margin-bottom: 10px;
+    color: white;
 }
 
 #portfolio li img {
     max-width: 100%;
     height: auto;
     margin-bottom: 10px;
+    filter: grayscale(80%);
 }
 
 #portfolio li p {
@@ -433,9 +482,10 @@ span {
 #portfolio li a {
     display: flex;
     align-items: center;
-    font-size: 18px;
+    font-size: 12px;
     text-decoration: none;
     color: #333;
+    color: white;
 
 
 }
@@ -498,3 +548,5 @@ span {
 #contact textarea {
     height: 150px;
 }
+
+

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blog Management Dashboard</title>
+	<style>
+			/* CSS styles here */
+			body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		.container {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 20px;
+		}
+		.header {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-bottom: 20px;
+		}
+		.header h1 {
+			font-size: 36px;
+			font-weight: bold;
+			margin: 0;
+			padding: 0;
+		}
+		.search-box {
+			flex: 1;
+			margin: 0 20px;
+			padding: 10px;
+			border: 2px solid #ccc;
+			border-radius: 5px;
+			font-size: 16px;
+		}
+		.btn {
+			display: inline-block;
+			padding: 10px 20px;
+			background-color: #4CAF50;
+			color: white;
+			text-align: center;
+			font-size: 16px;
+			font-weight: bold;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			margin-bottom: 5%;
+		}
+		.btn:hover {
+			background-color: #3e8e41;
+		}
+		.blog-list {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+			grid-gap: 20px;
+		}
+		.blog-card {
+			background-color: #fff;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+			border-radius: 5px;
+			padding: 20px;
+			position: relative;
+		}
+		.blog-card:hover {
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+			transform: translateY(-5px);
+			transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+		}
+		.blog-card h2 {
+			font-size: 24px;
+			margin: 0;
+			padding: 0;
+			margin-bottom: 10px;
+		}
+		.blog-card p {
+			font-size: 16px;
+			margin: 0;
+			padding: 0;
+			margin-bottom: 20px;
+			text-align: justify;
+		}
+		.blog-card img {
+			max-width: 20%;
+			height: auto;
+			border-radius: 5px;
+			margin-bottom: 20px;
+		}
+		.blog-actions {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			display: flex;
+			flex-direction: column;
+		}
+		.blog-actions button {
+			margin-bottom: 10px;
+			background-color: #636463;
+			color: white;
+			border: none;
+			border-radius: 5px;
+			padding: 5px 10px;
+			font-size: 14px;
+			cursor: pointer;
+		}
+		.blog-actions button:hover {
+			background-color: #0e0e0e;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<h1>Blog Management Dashboard</h1>
+		</div>
+		<div class="actions">
+			<input type="text" class="search-box" placeholder="Search...">
+			<button class="btn">Search</button>
+			<button class="btn">Add New</button>
+		</div>
+		<div class="blog-list">
+			<div class="blog-card">
+				<img src="../images/clean-codes.png" alt="Blog Image">
+				<h2>Best Practices for Writing Clean Code</h2>
+				<!-- <img src="../images/clean-codes.png" alt="Blog Image"> -->
+				<p>Writing clean code is an essential aspect of software development. It ensures that the code is easy to read, understand, and maintain. Clean code is critical to the success of any software project, and it starts with following some best practices. In this blog, we will discuss some tips for writing maintainable software that will help you create clean code. These tips include keeping functions small and focused, using descriptive variable and function names, and following the DRY (Don't Repeat Yourself) principle.<a href="blog-post.html" class="read-more">Read More</a></p>
+				<div class="blog-actions">
+					<button class="btn">Read</button>
+					<button class="btn">Edit</button>
+					<button class="btn">Delete</button>
+				</div>
+			</div>
+			<div class="blog-card">
+				<img src="../images/web-dev.png" alt="Blog Image">
+				<h2>Agile Software Development: An Introduction</h2>
+				<!-- <img src="https://via.placeholder.com/300x200.png?text=Blog+Image+2" alt="Blog Image"> -->
+				<p>Agile software development is an iterative approach to software development that emphasizes collaboration, flexibility, and customer satisfaction. This approach has gained popularity in recent years as it provides an efficient and effective way to develop high-quality software. In this blog, we will introduce the basic principles of Agile software development and discuss how it differs from traditional Waterfall methodology. We will also provide an overview of some of the most popular Agile frameworks, such as Scrum and Kanban.<a href="blog-post.html" class="read-more">Read More</a></p>
+				<div class="blog-actions">
+					<button class="btn">Read</button>
+					<button class="btn">Edit</button>
+					<button class="btn">Delete</button>
+				</div>
+			</div>
+			<div class="blog-card">
+				<img src="../images/git.png" alt="Blog Image">
+				<h2>Understanding Version Control with Git</h2>
+				<!-- <img src="https://via.placeholder.com/300x200.png?text=Blog+Image+2" alt="Blog Image"> -->
+				<p>Version control is a critical component of software development that enables developers to manage changes to the codebase over time. Git is one of the most popular version control systems used today. It provides developers with a powerful set of tools for managing code changes, collaborating with other developers, and tracking the history of the codebase. In this blog, we will provide an overview of Git version control and discuss its features and benefits. We will also show you how to get started with Git and share some best practices for using it effectively.<a href="blog-post.html" class="read-more">Read More</a></p>
+				<div class="blog-actions">
+					<button class="btn">Read</button>
+					<button class="btn">Edit</button>
+					<button class="btn">Delete</button>
+				</div>
+			</div>
+			<div class="blog-card">
+				<img src="../images/aws.png" alt="Blog Image">
+				<h2>AWS Cloud Computing: An Introduction</h2>
+				<!-- <img src="https://via.placeholder.com/300x200.png?text=Blog+Image+2" alt="Blog Image"> -->
+				<p>Cloud computing has revolutionized the way software is developed and deployed. Amazon Web Services (AWS) is one of the leading cloud computing platforms that offer a wide range of services for hosting and deploying applications. In this blog, we will introduce you to AWS cloud computing and discuss its benefits for software development. We will cover some of the most popular AWS services, such as EC2, S3, and RDS, and provide an overview of how they can be used to build scalable and resilient applications in the cloud.<a href="blog-post.html" class="read-more">Read More</a></p>
+				<div class="blog-actions">
+					<button class="btn">Read</button>
+					<button class="btn">Edit</button>
+					<button class="btn">Delete</button>
+				</div>
+			</div>
+			<div class="blog-card">
+				<img src="https://via.placeholder.com/300x200.png?text=Blog+Image+2" alt="Blog Image">
+				<h2>Blog Title</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.<a href="blog-post.html" class="read-more">Read More</a></p>
+				<!-- <a href="blog-post.html" class="read-more">Read More</a> -->
+				<div class="blog-actions">
+					<button class="btn">Read</button>
+					<button class="btn">Edit</button>
+					<button class="btn">Delete</button>
+				</div>
+			</div>
+			<!-- Add more blog cards here -->
+		</div>
+	</div>
+</body>
+</html>
